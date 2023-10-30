@@ -1,5 +1,7 @@
 // Exercise Level 3 Solution
 
+// Conditionals Exercise Solution
+
 // Exercise 3.1 and 3.2 solution 
 const prompt = require("prompt-sync")();
 let dayInput = prompt("Enter a month: ").toLowerCase();

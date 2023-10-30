@@ -1,5 +1,7 @@
 // Exercise 1 Level 3 Solution
 
+// Arrays Exercise Solution
+
 // Exercise 1.3.1
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 

@@ -1,5 +1,7 @@
 // Exercise 1 Level 2 Solution
 
+// Arrays Exercise Solution
+
 // country.js and web_techs.js Access both file in main.js file
 
 // Exercisec 1.2.1

@@ -1,5 +1,7 @@
 // Exercise Solution 
 
+// Arrays Exercise Solution
+
 // Exercise 1
 const emptyArr = [];
 

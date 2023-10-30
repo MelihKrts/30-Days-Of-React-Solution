@@ -1,5 +1,7 @@
 // Install prompt sync https://www.npmjs.com/package/prompt-sync
 
+// Conditionals Exercise Solution
+
 // Exercise Level 1 Solution
 
 // Exercise 1

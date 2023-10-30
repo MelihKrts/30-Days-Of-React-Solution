@@ -1,5 +1,7 @@
 // Exercise Level 2 Solution
 
+// Conditionals Exercise Solution
+
 // Exercise 2.1
 
 const prompt = require("prompt-sync")();
