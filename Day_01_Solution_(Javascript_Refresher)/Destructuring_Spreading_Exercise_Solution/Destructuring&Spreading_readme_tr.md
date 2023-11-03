@@ -118,7 +118,7 @@ console.log(width, height, perimeter);
 ```
 <br>
 
-# Değişken Adlaını Yeniden İsimlendirme
+# Değişken Adlarını Yeniden İsimlendirme
 
 ```javascript
 const rectangle = {
