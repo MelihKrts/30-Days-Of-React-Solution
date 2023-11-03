@@ -5,4 +5,5 @@
 |Conditionals Exercise Solutions | [Conditionals Exercise](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_01_Solution_(Javascript_Refresher)/Conditionals_Exercise_Solution)
 |Destructuring & Spreading Exercise Solutions| [Destructuring & Spreading Exercise](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_01_Solution_(Javascript_Refresher)/Destructuring_Spreading_Exercise_Solution)
 |Function Exercise Solutions | [Function Exercise](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_01_Solution_(Javascript_Refresher)/Function_Exercise_Solution)
+| Functional Programming Exercise Solutions | [Functional Programming Exercise](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_01_Solution_(Javascript_Refresher)/Functional_Programming_Exercise_Solution)
 |Object Exercise Solutions| [Object Exercise](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_01_Solution_(Javascript_Refresher)/Object_Exercise_Solution)
