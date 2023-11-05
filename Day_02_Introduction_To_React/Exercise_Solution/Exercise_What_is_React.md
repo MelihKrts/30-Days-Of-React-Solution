@@ -6,11 +6,11 @@
 5) The latest version of this repo at the time of writing is 18.2.0 <br><br>
 6) It is used to make web pages dynamic and interactive. It can be used to perform operations such as finding an element on a page, changing its content, adding a new element or removing an existing element<br><br>
 7) Virtual DOM (VDOM) is a programming concept where an ideal or virtual representation of a UI is kept in memory and synchronized with the real DOM by a library such as ReactDOM.<br><br>
-8) A website or application consists of buttons, links, forms with different input fields (phone number, e-mail, etc);
-<br>
+8) A website or application consists of buttons, links, forms with different input fields (phone number, e-mail, etc);<br>
 
 - `<header>`<br>
 - `<footer>`<br>
 - `<section>`<br>
 - `<article>`<br>
+  
 - texts, images, sound files, videos, composed of boxes of different shapes.
