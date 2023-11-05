@@ -8,8 +8,9 @@
 7) Virtual DOM (VDOM) is a programming concept where an ideal or virtual representation of a UI is kept in memory and synchronized with the real DOM by a library such as ReactDOM.<br><br>
 8) A website or application consists of buttons, links, forms with different input fields (phone number, e-mail, etc);
 <br>
-- `<header>`
-- `<footer>`
-- `<section>`
-- `<article>`
+
+- `<header>`<br>
+- `<footer>`<br>
+- `<section>`<br>
+- `<article>`<br>
 - texts, images, sound files, videos, composed of boxes of different shapes.
