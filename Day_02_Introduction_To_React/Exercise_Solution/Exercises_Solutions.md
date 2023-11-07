@@ -36,11 +36,12 @@
 - src <br>
 - href <br>
 - alt <br>
+  
 Can be given as an example. <br><br>
 
-4) JSX (Javascript Syntax Extension) or (Javascript XML) allows us to write HTML elements in javascript code <br><br>
-5) Babel is a JavaScript compiler for converting JavaScript code to run in different browsers and environments. <br><br>
-6) It means taking soruce code written in one high level programming language and converting it into code written in another high-level programming language. <br>
+1) JSX (Javascript Syntax Extension) or (Javascript XML) allows us to write HTML elements in javascript code <br><br>
+2) Babel is a JavaScript compiler for converting JavaScript code to run in different browsers and environments. <br><br>
+3) It means taking soruce code written in one high level programming language and converting it into code written in another high-level programming language. <br>
 Like translating Sass into CSS. 
 <br><br>
 
@@ -50,7 +51,7 @@ Like translating Sass into CSS.
     const name = <h1> Melih </h1>
    ``` 
     <br><br>
-3) Day 02 Introduction to React index.html
+3) Day 02 Introduction to React index.html <br><br>
 4) See index.html
 <br><br>
 
