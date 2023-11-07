@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to React</title>
+
+    <!-- Exercise Internal Styles answer solution -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi:wght@400;500;600;700&display=swap');
+
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans Kawi', sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: red;
+        }
+        li {
+            list-style: none;
+        }
+
+        p {
+            display: block;
+            padding: 0 15px;
+        }
+
+        .paragraph {
+            padding: 10px 5px;
+            text-align: justify;
+        }
+
+        .main-wrapper {
+            margin-left: 10px;
+            position: relative;
+        }
+
+        main {
+            width: 100%;
+            padding-bottom: 50px;
+        }
+
+        footer {
+            width: 100%;
+            position: absolute;
+            height: 50px;
+        }
+
+        .dynamics {
+            width: 100%;
+            padding: 0 20px;
+            text-align: left;
+            display: flex;
+            flex-shrink: 1;
+            flex-direction: column;
+        }
+
+        .dynamics>h2 {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        footer>div>p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        const rootElement = document.querySelector(".root");
+
+        // Exercises JSX Elements answer 2
+
+        const name = <h1> Melih Karataş </h1>;
+
+        // Exercises JSX Elements answer 3
+
+        const myFirstName = "Melih";
+        const lastName = "Karataş";
+        const fullName = myFirstName + ' ' + lastName;
+        const country = "Turkey";
+        const title = "Frontend Developer";
+        const gender = "Male";
+        const email = "email@email.com";
+        const phoneNumber = "01234567890";
+
+        // Exercise Inline Style answer 1
+
+        const mainStyle = {
+            backgroundColor: "#F3F0F5",
+            textAlign: "justify", // Exercise Inline Style answer 3
+            padding: 10 // Exercise Inline Style answer 3
+        }
+
+        // Exercise Inline Style answer 2
+
+        const footerStyle = {
+            backgroundColor: "#61dbfb",
+            textAlign: "justify", // Exercise Inline Style answer 3
+            padding: 10, // Exercise Inline Style answer 3
+        }
+
+        // Exercise Inject Data to JSX,
+        const dynamicTitle = "This is a Dynamic Title";
+        // When the value of the variable changes, the value will also change
+        const dynamicString = "This is dynamic string";
+
+        let sumOne = 1;
+        let sumTwo = 2;
+        const sumResult = sumOne + sumTwo;
+
+        let numOne = 3;
+        let numTwo = 4;
+
+        const isUserLoggedIn = true;
+
+        const obj = {
+            firstName: "Scarlet",
+            lastName: "Johansson",
+            age: 38,
+            isBeautiful: true
+        }
+
+        const animalArray = ["Dog", "Cat", "Duck", "Bird"];
+        const arrayFormatted = animalArray.map((animal)=> <li key={animal}>{animal}</li>)
+
+        const main = (
+            <main style={mainStyle}>
+
+                <div className="main-wrapper">
+                    <div>
+                        <p className="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita eligendi molestiae eum consectetur blanditiis natus adipisci omnis est saepe molestias maiores provident at, velit aut iusto quaerat! Quia facilis nulla repellendus cupiditate, necessitatibus sit doloremque laudantium omnis tenetur magnam quae?</p>
+                    </div>
+                    <div>
+                        <p className="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sit facilis aliquam, impedit delectus quae recusandae consequatur minus exercitationem optio obcaecati aspernatur nulla deserunt dolores cumque sint ut. Eaque, blanditiis harum? Optio quasi hic repudiandae voluptas deserunt rerum vero ex!</p>
+                    </div>
+                    <div>
+                        <p className="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed quia molestias, earum fuga tempora. Nulla voluptate omnis necessitatibus voluptatum id veniam voluptatem debitis quis quisquam quam ducimus in, aspernatur reprehenderit eum perferendis praesentium, eius laboriosam. Omnis architecto suscipit inventore.</p>
+                    </div>
+                    <div>
+                        <p className="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi libero nam maiores reiciendis doloremque est consequuntur nulla voluptatem? Fugiat voluptatibus laudantium nihil vero repellendus, voluptatem dolorum voluptates quam, accusantium eveniet tempora animi vitae modi similique delectus quibusdam. Perferendis, ducimus.</p>
+                    </div>
+
+                    <div className="dynamics">
+                        <h2>{dynamicTitle}</h2>
+                        <span>{dynamicString}</span>
+                        <span>Result: {sumResult} </span>
+                        <span>{numOne} + {numTwo}  = {numOne + numTwo}</span>
+
+                        {isUserLoggedIn ? (
+                            <span>User is logged in.</span>
+                        ) : (
+                            <span>User is not logged in.</span>
+                        )}
+
+                        <span>Person Info: {obj.firstName} {' '} {obj.lastName}</span>
+                        <ul>
+                            {arrayFormatted}
+                        </ul>
+
+                    </div>
+
+                </div>
+            </main>
+        )
+
+        const user = (
+            <div>
+                <h1>{fullName}</h1>
+                <p>{country}</p>
+                <p>{title}</p>
+                <p>{gender}</p>
+                <p>{email}</p>
+                <p>{phoneNumber}</p>
+            </div>
+        )
+
+        // Exercises JSX Elements answer 4
+
+        const footer = (
+            <footer style={footerStyle}>
+                <div>
+                    <p>copyright 2023</p>
+                </div>
+            </footer>
+        )
+
+
+
+        const app = (
+            <div>
+                {user}
+                {main}
+                {footer}
+            </div>
+        )
+
+        ReactDOM.render(app, rootElement)
+    </script>
+
+</body>
+
+</html>
