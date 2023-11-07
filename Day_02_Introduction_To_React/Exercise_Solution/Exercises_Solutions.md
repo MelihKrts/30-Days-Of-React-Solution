@@ -22,13 +22,13 @@
 
 # Exercise JSX
 1) An `<html>` element is defined by a start tag, content and end tag. <br><br>
-2) 
-```html
+2) ```html
+    <br>
+    <hr>
+    <img>
+    ```
 <br>
-<hr>
-<img>
-```
-<br><br>
+
 3) An HTML property is a piece of markup language used to set the behaviour or appearance of an HTML element. <br>
 - class <br>
 - id <br>
@@ -36,9 +36,29 @@
 - src <br>
 - href <br>
 - alt <br>
-
 Can be given as an example. <br><br>
+
 4) JSX (Javascript Syntax Extension) or (Javascript XML) allows us to write HTML elements in javascript code <br><br>
 5) Babel is a JavaScript compiler for converting JavaScript code to run in different browsers and environments. <br><br>
 6) It means taking soruce code written in one high level programming language and converting it into code written in another high-level programming language. <br>
-Like translating Sass into CSS.
+Like translating Sass into CSS. 
+<br><br>
+
+# Exercises JSX Element
+1) JSX elements are Javascript objects that represent the structure pf the user interface <br><br>
+2) ```jsx
+    const name = <h1> Melih </h1>
+   ``` 
+    <br><br>
+3) Day 02 Introduction to React index.html
+4) See index.html
+<br><br>
+
+# Exercises Inline Style
+See **index.html**
+
+# Exercises Internal Styles
+See **index.html**
+
+# Exercises Inject Data to JSX
+See **index.html**
