@@ -52,14 +52,14 @@ Like translating Sass into CSS.
    ``` 
     <br>
 3) Day 02 Introduction to React index.html <br><br>
-4) See index.html
+4) See [index.html](https://github.com/MelihKrts/30-Days-Of-React-Solution/blob/main/Day_02_Introduction_To_React/Create-JSX-app/index.html)
 <br><br>
 
 # Exercises Inline Style
-See **index.html**
+See [index.html](https://github.com/MelihKrts/30-Days-Of-React-Solution/blob/main/Day_02_Introduction_To_React/Create-JSX-app/index.html)
 
 # Exercises Internal Styles
-See **index.html**
+See [index.html](https://github.com/MelihKrts/30-Days-Of-React-Solution/blob/main/Day_02_Introduction_To_React/Create-JSX-app/index.html)
 
 # Exercises Inject Data to JSX
-See **index.html**
+See [index.html](https://github.com/MelihKrts/30-Days-Of-React-Solution/blob/main/Day_02_Introduction_To_React/Create-JSX-app/index.html)
