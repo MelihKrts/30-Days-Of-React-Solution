@@ -35,7 +35,8 @@
 
  ## Public
   **`public`** : Used to host static files. <br>
-   index.html: The main HTML file of the application. This file is the starting point of the React application and contains a div named root. <br>
+
+  - `index.html` : The main HTML file of the application. This file is the starting point of the React application and contains a div named root. <br>
 
   - `favicon.ico`: The favicon of the website, the small icon that appears in the browser tab. 
   
