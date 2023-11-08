@@ -33,7 +33,7 @@
   - `App.js`: The main component of the application. It can contain other components.
   -index.js: The starting point of the application. It contains ReactDOM's `render` function and usually mounts the `App` component into an HTML element called `root`.  <br>
 
-  # Public
+   ## Public
   **`public`** : Used to host static files. <br>
    index.html: The main HTML file of the application. This file is the starting point of the React application and contains a div named root. <br>
 
