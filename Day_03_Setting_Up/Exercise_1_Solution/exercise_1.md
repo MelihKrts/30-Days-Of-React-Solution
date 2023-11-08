@@ -12,7 +12,9 @@
   <br>
 7) There are 3 main folders: node_modules, src and public. These Folders are; <br>
 - node_modules : This is the folder with all the packages required for React. <br>
+
   ## Src
+
 - **`src`** : The main folder containing the source code of the application. Inside the src folder; 
   - `index.html` : The only HTML page in the React application <br>
   
@@ -54,10 +56,10 @@
 - `yarn.lock` , `package.json` : Security files for packages. <br>
 
 ----
-8) Visual Studio Code
+1) Visual Studio Code
 
-9) ES7+ React/Redux/React-Native snippets added [Extension Link](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) <br>
-10)  [See exercises_app](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_03_Setting_Up/exercises_app)
+2) ES7+ React/Redux/React-Native snippets added [Extension Link](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) <br>
+3)   [See exercises_app](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_03_Setting_Up/exercises_app)
   
  
 
