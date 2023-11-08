@@ -45,14 +45,19 @@
   - `videos`: A subfolder containing video files. 
   
   ## File Structure
- - `package.json` : Writes a list of packages used by the application
- - `gitignore` : The files that are not to be transferred to Github in the project are written into the `.gitignore` file and not transferred to Github.
- - `README.md` : Used to give information about the project.
- yarn.lock`, `package.json` : Security files for packages. <br>
+ - `package.json` : Writes a list of packages used by the application 
+  
+ - `gitignore` : The files that are not to be transferred to Github in the project are written into the `.gitignore` file and not transferred to Github. 
+  
+ - `README.md` : Used to give information about the project. 
+  
+- `yarn.lock` , `package.json` : Security files for packages. <br>
+
 ----
 8) Visual Studio Code
+
 9) ES7+ React/Redux/React-Native snippets added [Extension Link](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) <br>
-10) [See exercises_app]()
+10)  [See exercises_app](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_03_Setting_Up/exercises_app)
   
  
 
