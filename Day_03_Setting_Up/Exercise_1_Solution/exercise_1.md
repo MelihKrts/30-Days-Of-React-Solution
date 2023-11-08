@@ -15,7 +15,7 @@
 
 ## Src
 
-- **`src`** : The main folder containing the source code of the application. Inside the src folder; 
+  **`src`** : The main folder containing the source code of the application. Inside the src folder; 
   - `index.html` : The only HTML page in the React application <br>
   
   - `favicon.ico` : Icon file <br>
