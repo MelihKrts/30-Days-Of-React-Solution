@@ -1,6 +1,6 @@
 # 30 Days of React Exercise Solution
 ![Banner image](image/banner.jpg)
-----
+
 <h1 align="center"> 30 Days Of React Solution
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/mlhkrtss.svg?style=social&label=Follow%20%40mlhkrtss)](https://twitter.com/mlhkrtss)
