@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi:wght@400;500;600;700&display=swap');
+* {
+    border: none;
+    font-family: 'Noto Sans Kawi', sans-serif;
+}
+.main-wrapper {
+    width: 100%;
+    background-color: #C2E6F4;
+    border-radius: 0.5rem;
+}
+h1{
+    padding-top: 25px;
+}
+.main-wrapper form>input {
+    margin-left: 15px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+button{
+    margin: 25px 0;
+    border: none;
+    background-color: #F37474 !important;
+    color: #fff;
+}
+.images{
+    border-radius: 50%;
+    width: 50%;
+}
+.image-div{
+    text-align: left;
+    margin:5px 10px;
+}
+.profile-info-area{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.profile-name{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.profile-title{
+    text-align: left;
+    margin: 20px 15px;
+}
+
+.container{
+    width: 450px;
+}
+.circle{
+    border-radius: 50%;
+    background-color: #2ACFCF;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-left: 5px;
+    margin-top: -6px;
+}
+.person-name{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.skills-area{
+    width: 100%;
+}
+.skills-container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-box{
+    color: #fff;
+    background-color: #2ACFCF;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.join-info{
+    width: 100%;
+}
+.join-container{
+    display: flex;
+}
+.join-time-info-area{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.join-box{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+}
+.join-box p {
+    margin-top: 5px;
+    margin-left: 10px;
+}
