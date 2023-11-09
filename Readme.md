@@ -1,12 +1,12 @@
 # 30 Days of React Exercise Solution
 ![Banner image](image/banner.jpg)
 ----
-<h1 align="center"> 30 Days Of React Solution</h1>
+<h1 align="center"> 30 Days Of React Solution
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/mlhkrtss.svg?style=social&label=Follow%20%40mlhkrtss)](https://twitter.com/mlhkrtss)
-[![Linkedin URL](https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social)](https://www.linkedin.com/in/melih-karatas2001/)
+[![Linkedin URL](https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social&label=%20%40melih-karatas2001)](https://www.linkedin.com/in/melih-karatas2001/)
 
-
+</h1>
 
 <br>
 
