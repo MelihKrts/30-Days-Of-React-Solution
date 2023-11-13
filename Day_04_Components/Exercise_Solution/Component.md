@@ -82,4 +82,4 @@ const Input = () =>{
 <br>
 
 # :information_source: Info
-Exercise answer the question 7,8,9 [see Exercise_app](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_04_Components/exercises_app)
+Exercise, Components Answer to questions 7,8,9 [see Exercise_app](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_04_Components/exercises_app)
