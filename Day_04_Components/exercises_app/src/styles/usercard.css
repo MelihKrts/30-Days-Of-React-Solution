@@ -1,0 +1,13 @@
+.circle{
+    background-color: #2ACFCF;
+}
+.skill{
+    background-color: #2ACFCF;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 5px 15px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
