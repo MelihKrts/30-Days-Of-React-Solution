@@ -18,3 +18,4 @@
 |02  |[Introduction To React](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_02_Introduction_To_React/Exercise_Solution)|
 |03 | [Setting Up](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_03_Setting_Up/)|
 |04| [Components](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_04_Components)|
+|05| [Props](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_05_Props)
