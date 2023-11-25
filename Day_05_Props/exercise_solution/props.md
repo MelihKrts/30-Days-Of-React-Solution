@@ -17,14 +17,15 @@ const Component = (props) => {
 <br>
 3.<strong> Datatype Props: </strong>
 <ul>
-<li><code>Boolean</code></li>
-<li><code>Number</code></li>
-<li><code>String</code></li>
-<li><code>Array</code></li>
-<li><code>Object</code></li>
+<br>
+<li><code>Boolean</code></li><br>
+<li><code>Number</code></li><br>
+<li><code>String</code></li><br>
+<li><code>Array</code></li><br>
+<li><code>Object</code></li> <br>
 <li><code>Function</code></li>
 </ul>
 <br>
-4. The PropTypes package helps us assign the data types of the props we pass to a component. <br><br>
-5. Used to provide a default prop value for a component.
+1. The PropTypes package helps us assign the data types of the props we pass to a component. <br><br>
+2. Used to provide a default prop value for a component.
 <p>
