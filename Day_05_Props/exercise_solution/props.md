@@ -26,6 +26,6 @@ const Component = (props) => {
 <li><code>Function</code></li>
 </ul>
 <br>
-1. The PropTypes package helps us assign the data types of the props we pass to a component. <br><br>
-2. Used to provide a default prop value for a component.
+4. The PropTypes package helps us assign the data types of the props we pass to a component. <br><br>
+5. Used to provide a default prop value for a component.
 <p>
