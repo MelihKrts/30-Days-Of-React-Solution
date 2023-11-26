@@ -29,3 +29,9 @@ const Component = (props) => {
 4. The PropTypes package helps us assign the data types of the props we pass to a component. <br><br>
 5. Used to provide a default prop value for a component.
 <p>
+
+# Exercise Level 2 Solution
+[See Exercise Level 2 Solution](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_05_Props/exercises_app)
+
+# Exercise Level 3 Solution
+[See Exercise Level 3 Solution](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_05_Props/exercises_app)
