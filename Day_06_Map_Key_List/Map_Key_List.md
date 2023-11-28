@@ -29,9 +29,9 @@
 Yes it makes it easier.<br><br>
 
 ## Answer to Exercise Level 2 Questions
-[See]()
+[See](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_06_Map_Key_List/exercise_solution)
 
 ## Answer to Exercise Level 2 Questions
-[See]()
+[See](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_06_Map_Key_List/exercise_solution)
 
 </p>
