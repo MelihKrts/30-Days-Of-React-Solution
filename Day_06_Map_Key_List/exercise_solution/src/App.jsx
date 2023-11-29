@@ -37,6 +37,7 @@ function App() {
       <Numbers numbers={numbers} />
       {/* Exercise Level 2.2 */}
       <ColorPalette/>
+      {/* Exercise Level 3 */}
       <Countries countries={countries}/>
     </>
   )
