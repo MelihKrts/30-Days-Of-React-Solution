@@ -1,0 +1,79 @@
+
+.country-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.country{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.country-content-box{
+    width: 33.3%;
+}
+.population-bar {
+    height: 20px;
+    background-color: #FFA500;
+    margin-bottom: 5px;
+}
+h1{
+    font-size: 1.1rem;
+}
+
+/* Number Component style */
+.number-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.number-box{
+    width: 140px;
+    height: 100px;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.subtitle{
+    margin: 10px 0;
+    display: block;
+}
+
+/* Color Palette Component */
+.color-palette-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+.color-box-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.color-box{
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}

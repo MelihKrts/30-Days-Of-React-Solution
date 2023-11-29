@@ -1,5 +1,4 @@
 import React from 'react';
-import "../style/color-palette.css";
 
 const ColorPalette = () => {
     const generateRandomHexColor = () => {

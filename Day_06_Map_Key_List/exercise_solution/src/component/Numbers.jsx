@@ -1,5 +1,4 @@
 import React from 'react'
-import "../style/number.css";
 
 const isPrime = (num) => {
     if (num <= 1) return false;
