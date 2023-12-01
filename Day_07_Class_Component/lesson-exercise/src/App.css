@@ -4,7 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
-
+.btn {
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: #888;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
