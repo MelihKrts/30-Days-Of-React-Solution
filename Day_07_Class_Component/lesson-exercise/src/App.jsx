@@ -176,7 +176,7 @@ class App extends React.Component {
       date: "Nov 1, 2023"
     }
     const techs = ["HTML", "CSS", "JavaScript"];
-    const user = {...data.author, image: asabeneh}
+    const user = { ...data.author, image: asabeneh }
     return (
       <div className='app'>
         <Header data={data} />
@@ -212,3 +212,33 @@ root.render(<App />)
 
 
 export default App
+
+// Parent class
+
+function Animal(name) {
+  this.name = name;
+}
+
+// Method in the parent class
+Animal.prototype.sayHello = function () {
+  console.log(`Hello I'm ${this.name}`);
+}
+
+// Child Class
+function Dog(name, breed) {
+  Animal.call(this, name);
+  this.breed = breed;
+}
+// Inherit from the parent class
+Dog.prototype = Object.create(Animal.prototype);
+
+// Additional method in the child class
+Dog.prototype.bark = function () {
+  console.log("Woof! Woof!")
+};
+
+// Create an instance of the child class
+const myDog = new Dog("Buddy", "Golden Retreiver");
+myDog.sayHello();
+myDog.bark();
+console.log(myDog.breed);
