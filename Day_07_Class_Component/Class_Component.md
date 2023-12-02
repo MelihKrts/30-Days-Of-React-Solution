@@ -55,8 +55,23 @@ console.log(myDog.breed);
 <table style="background-color:pink">
   <thead>
     <tr>
-      <th colspan="2" style="text-align:center">Differences between Functional Components and Class Components</p> </th>
+      <th colspan="2" style="text-align:center">Differences between Functional Components and Class Components </th>
     </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center">Functional Component</td>
+      <td style="text-align:center">Class Component</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+    </tr>
+    <tr>
+      <td>Row 3, Cell 1</td>
+      <td>Row 3, Cell 2</td>
+    </tr>
+  </tbody>
 </table>
 
 
