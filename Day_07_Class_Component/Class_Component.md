@@ -149,7 +149,7 @@ console.log(myDog.breed);
 </p>
 <hr>
 
-#### The `constructor`
+#### The `constructor()`
 <p align="justify">The <code>constructor()</code> method is called when the component is first created. You use it to initialize the component's state and bind methods to the component's instance.</p>
 
 <p align="justify">The constructor() method is called with the props, as arguments, and you should always start by calling the super(props) before anything else, this will initiate the parent's constructor method and allows the component to inherit methods from its parent (React.Component).
@@ -187,11 +187,11 @@ export default Counter;
 ```
 <hr>
 
-#### The `render`
+#### The `render()`
 <p align="justify">The <code>render()</code> method is required, and is the method that actually outputs the HTML to the DOM. </p>
 <hr>
 
-#### The `getDerivedStateFromProps`
+#### The `getDerivedStateFromProps()`
 <p align="justify">The <code>getDerivedStateFromProps()</code> method is called right before rendering the element(s) in the DOM.
 
 This is the natural place to set the <code>state</code> object based on the initial <code>props</code>.
@@ -228,7 +228,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 <hr>
 
-#### The `componentDidMount`
+#### The `componentDidMount()`
 
 <p align="justify">
 The <code>componentDidMount()</code> method is called once the component has been mounted into the DOM. It is typically used to set up any necessary event listeners or timers, perform any necessary API calls or data fetching, and perform other initialization tasks that require access to the browser's DOM API.
@@ -254,7 +254,6 @@ class Header extends React.Component {
 
 ReactDOM.render(<Header />, document.getElementById('root'));
 ```
-<br>
 <hr>
 
 ### Updating
@@ -309,7 +308,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 ```
 <hr>
 
-#### The `shouldComponentUpdate`
+#### The `shouldComponentUpdate()`
 <p align="justify">In the shouldComponentUpdate() method you can return a Boolean value that specifies whether React should continue with the rendering or not. </p>
 
 <p align="justify">The default value is <code>true</code>.</p>
@@ -374,8 +373,8 @@ ReactDOM.render(<Header />, document.getElementById('root'));
 
 <hr>
 
-#### The `render`
-<p align="justify">The render() method is of course called when a component gets updated, it has to re-render the HTML to the DOM, with the new changes.</p>
+#### The `render()`
+<p align="justify">The <code>render()</code> method is of course called when a component gets updated, it has to re-render the HTML to the DOM, with the new changes.</p>
 
 <p align="justify">
 The example below has a button that changes the favorite color to blue:
@@ -404,7 +403,7 @@ ReactDOM.render(<Header />, document.getElementById('root'));
 ```
 <hr>
 
-#### The `getSnapshotBeforeUpdate`
+#### The `getSnapshotBeforeUpdate()`
 <p align="justify">The <code>getSnapshotBeforeUpdate()</code> method is called just before the component's UI is updated. It allows the component to capture some information about the current state of the UI, such as the scroll position before it changes. This method returns a value that is passed as the third parameter to the <code>componentDidUpdate()</code> method.</p>
 
 <p align="justify">Here's an example of how to use <code>getSnapshotBeforeUpdate()</code> to capture the scroll position of a component before it updates:</p>
@@ -458,6 +457,102 @@ ReactDOM.render(<Header />, document.getElementById('root'));
 
 <p align="justify"> Finally, the <code>ReactDOM.render</code> function is called to render the Header component inside an HTML element with the id of "root".</p>
 
+<hr>
+
+#### The `componentDidUpdate()`
+<p align="justify">
+<p align="justify">The <code>componentDidUpdate</code> method is called after the component is updated in the DOM.</p>
+
+<p align="justify">The example below might seem complicated, but all it does is this: </p>
+
+<p align="justify"> When the component is mounting it is rendered with the favorite color "red". </p>
+
+<p align="justify"> When the component has been mounted, a timer changes the state, and the color becomes "yellow". </p>
+
+<p align="justify"> This action triggers the update phase, and since this component has a <code>componentDidUpdate</code> method, this method is executed and writes a message in the empty DIV element:</p>
+</p>
+
+```jsx
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritecolor: "red"};
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({favoritecolor: "yellow"})
+    }, 1000)
+  }
+  componentDidUpdate() {
+    document.getElementById("mydiv").innerHTML =
+    "The updated favorite is " + this.state.favoritecolor;
+  }
+  render() {
+    return (
+      <div>
+      <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+      <div id="mydiv"></div>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Header />, document.getElementById('root'));
+```
+<hr>
+
+### Unmountig
+<p align="justify">The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React likes to call it.</p>
+<p align="justify">React has only one built-in method that gets called when a component is unmounted:
+
+1. `componentWillUnmount()`
+</p>
+
+<br>
+
+#### The `componentWillUnmount()`
+<p align="justify">The <code>componentWillUnmount</code> method is called when the component is about to be removed from the DOM.</p>
+
+<p align="justify">Click the button to delete the header:</p>
+
+```jsx
+class Container extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {show: true};
+  }
+  delHeader = () => {
+    this.setState({show: false});
+  }
+  render() {
+    let myheader;
+    if (this.state.show) {
+      myheader = <Child />;
+    };
+    return (
+      <div>
+      {myheader}
+      <button type="button" onClick={this.delHeader}>Delete Header</button>
+      </div>
+    );
+  }
+}
+
+class Child extends React.Component {
+  componentWillUnmount() {
+    alert("The component named Header is about to be unmounted.");
+  }
+  render() {
+    return (
+      <h1>Hello World!</h1>
+    );
+  }
+}
+
+ReactDOM.render(<Container />, document.getElementById('root'));
+```
+<hr>
+
 ### Answer to Question 9
 <p align="justify">The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders. The changes in state can happen as a response to user action or system-generated events and these changes determine the behavior of the component and how it will render.</p>
 
@@ -480,8 +575,27 @@ class Greetings extends React.Component {
   }
 }
 ```
-
 <br>
+<p align="justify"> 
+
+1. A state can be modified based on user action or network changes
+
+2. Every time the state of an object changes, React re-renders the component to the browser
+  
+3. The state object is initialized in the constructor
+  
+4. The state object can store multiple properties
+
+5. `this.setState()` is used to change the value of the state object
+
+6. `setState()` function performs a shallow merge between the new and the previous state
+</p>
+
+#### The `setState()` Method
+<p align="justify">State can be updated in response to event handlers, server responses, or prop changes. This is done using the <code>setState()</code> method. The <code>setState()</code> method enqueues all of the updates made to the component state and instructs React to re-render the component and its children with the updated state.</p>
+
+<p align="justify">Always use the <code>setState()</code> method to change the state object, since it will ensure that the component knows it’s been updated and calls the <code>render()</code> method.</p>
+
 
 # References
 - [Simplilearn](https://www.simplilearn.com/tutorials/reactjs-tutorial/reactjs-state)
