@@ -53,25 +53,53 @@ console.log(myDog.breed);
 
 ### Answer to Question 4
 <table>
-  <thead>
-    <tr>
-      <th colspan="2" style="text-align:center">Differences between Functional Components and Class Components </th>
-    </tr>
-    </thead>
-  <tbody>
-    <tr align="center">
-      <td>Functional Component</td>
-      <td>Class Component</td>
-    </tr>
-    <tr align="justify">
-      <td> A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).</td>
-      <td>A class component requires you to extend from React. Component and create a render function that returns a React element.</td>
-    </tr>
-    <tr>
-      <td>There is no render method used in functional components.	</td>
-      <td>It must have the render() method returning JSX (which is syntactically similar to HTML)</td>
-    </tr>
-  </tbody>
+
+<thead>
+<tr>
+<th colspan="2" style="text-align:center">Differences between Functional Components and Class Components </th>
+</tr>
+</thead>
+
+<tbody align="justify">
+
+<tr align="center">
+<td>Functional Component	</td>
+<td> Class Component </td>
+</tr>
+
+<tr>
+<td>A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).	</td>
+<td>A class component requires you to extend from React. Component and create a render function that returns a React element.
+</td>
+</tr>
+
+<tr>
+<td>There is no render method used in functional components.	</td>
+<td>It must have the render() method returning JSX (which is syntactically similar to HTML)
+</td>
+</tr>
+
+<tr>
+<td>Functional components run from top to bottom and once the function is returned it can’t be kept alive.	</td>
+<td>The class component is instantiated and different life cycle method is kept alive and is run and invoked depending on the phase of the class component.
+</td>
+</tr>
+
+<tr>
+<td>React lifecycle methods (for example, componentDidMount) cannot be used in functional components.	</td>
+<td>React lifecycle methods can be used inside class components (for example, componentDidMount).
+</td>
+</tr>
+
+<tr>
+<td>Constructors are not used.	</td>
+<td>Constructor is used as it needs to store state. </td>
+</tr>
+
+
+
+</tbody>
+
 </table>
 
 
