@@ -53,13 +53,8 @@ console.log(myDog.breed);
 
 ### Answer to Question 4
 | Differences between Functional Components and Class Components | |
-|:---: | :---: |
-| Functional Component | Centered Header 2 |
-| ----:| :-- |
-| Row 1, Cell 1 | Row 1, Cell 2 |
-| Row 2, Cell 1 | Row 2, Cell 2 |
-| Row 3, Cell 1 | Row 3, Cell 2 |
-| Footer 1 | Footer 2 |
+|:-------------------------------------------------------------:|---|
+
 
 
 
