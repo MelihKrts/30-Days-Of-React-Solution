@@ -139,7 +139,13 @@ console.log(myDog.breed);
 
 <p align="justify">During the phase, several lifecycle methods are invoked by React to enable the developer to configure the component, set up any necessary state or event listeners, and perfom other initialization tasks.</p> 
 
-<p align="justify">The mounting phase has three main lifecycle methods
+<p align="justify">React has four built-in methods that gets called, in this order, when mounting a component:
+
+1. `constructor()`
+2. `getDerivedStateFromProps()`
+3. `render()`
+4. `componentDidMount()`
+
 </p>
 <hr>
 
@@ -183,11 +189,11 @@ export default Counter;
 <hr>
 
 #### The `render`
-<p align="justify">The <code> render()</code> method is required, and is the method that actually outputs the HTML to the DOM. </p>
+<p align="justify">The <code>render()</code> method is required, and is the method that actually outputs the HTML to the DOM. </p>
 <hr>
 
 #### The `getDerivedStateFromProps`
-<p align="justify"><code>The getDerivedStateFromProps()</code> method is called right before rendering the element(s) in the DOM.
+<p align="justify">The <code>getDerivedStateFromProps()</code> method is called right before rendering the element(s) in the DOM.
 
 This is the natural place to set the <code>state</code> object based on the initial <code>props</code>.
 
@@ -195,7 +201,6 @@ It takes <code>state</code> as an argument, and returns an object with changes t
 
 The example below starts with the favorite color being "red", but the <code>getDerivedStateFromProps()</code> method updates the favorite color based on the favcol attribute:</p>
 
-<br>
 
 `props`: The updated props for the component.
 
@@ -221,13 +226,12 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 ```
 
 <hr>
-<br>
 
 #### The `componentDidMount`
 <hr>
 
 <p align="justify">
-The componentDidMount() method is called once the component has been mounted into the DOM. It is typically used to set up any necessary event listeners or timers, perform any necessary API calls or data fetching, and perform other initialization tasks that require access to the browser's DOM API.
+The <code>componentDidMount()</code> method is called once the component has been mounted into the DOM. It is typically used to set up any necessary event listeners or timers, perform any necessary API calls or data fetching, and perform other initialization tasks that require access to the browser's DOM API.
 </p>
 
 ```jsx
@@ -259,7 +263,200 @@ The next phase in the lifecycle is when a component is updated.</p>
 
 <p align="justify">A component is updated whenever there is a change in the component's state or props.
 <p>
+
+<p align="justify">
+React has five built-in methods that gets called, in this order, when a component is updated:
+
+1. `getDerivedStateFromProps()`
+2. `shouldComponentUpdate()`
+3. `render()`
+4. `getSnapshotBeforeUpdate()`
+5. `componentDidUpdate()`
+</p>
 <hr>
+
+#### The `getDerivedStateFromProps()`
+<p align="justify">Also at updates the <code>getDerivedStateFromProps</code> method is called. This is the first method that is called when a component gets updated.</p>
+
+<p align="justify">This is still the natural place to set the state object based on the initial props.</p>
+
+<p align="justify">The example below has a button that changes the favorite color to blue, but since the <code>getDerivedStateFromProps()</code> method is called, which updates the state with the color from the favcol attribute, the favorite color is still rendered as yellow:</p>
+<br>
+
+```jsx
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritecolor: "red"};
+  }
+  static getDerivedStateFromProps(props, state) {
+    return {favoritecolor: props.favcol };
+  }
+  changeColor = () => {
+    this.setState({favoritecolor: "blue"});
+  }
+  render() {
+    return (
+      <div>
+      <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+      <button type="button" onClick={this.changeColor}>Change color</button>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
+```
+<hr>
+
+#### The `shouldComponentUpdate`
+<p align="justify">In the shouldComponentUpdate() method you can return a Boolean value that specifies whether React should continue with the rendering or not. </p>
+
+<p align="justify">The default value is <code>true</code>.</p>
+
+<p align="justify">The example below shows what happens when the <code>shouldComponentUpdate()</code> method returns <code>false</code></p>
+
+
+Stop the component from rendering at any update
+
+```jsx
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritecolor: "red"};
+  }
+  shouldComponentUpdate() {
+    return false;
+  }
+  changeColor = () => {
+    this.setState({favoritecolor: "blue"});
+  }
+  render() {
+    return (
+      <div>
+      <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+      <button type="button" onClick={this.changeColor}>Change color</button>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Header />, document.getElementById('root'));
+```
+
+<br>
+<p align="justify">Same example as above, but this time the <code>shouldComponentUpdate()</code> method returns true instead</p>
+
+```jsx
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritecolor: "red"};
+  }
+  shouldComponentUpdate() {
+    return true;
+  }
+  changeColor = () => {
+    this.setState({favoritecolor: "blue"});
+  }
+  render() {
+    return (
+      <div>
+      <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+      <button type="button" onClick={this.changeColor}>Change color</button>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Header />, document.getElementById('root'));
+```
+
+<hr>
+
+#### The `render`
+<p align="justify">The render() method is of course called when a component gets updated, it has to re-render the HTML to the DOM, with the new changes.</p>
+
+<p align="justify">
+The example below has a button that changes the favorite color to blue:
+</p>
+
+```jsx
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritecolor: "red"};
+  }
+  changeColor = () => {
+    this.setState({favoritecolor: "blue"});
+  }
+  render() {
+    return (
+      <div>
+      <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+      <button type="button" onClick={this.changeColor}>Change color</button>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Header />, document.getElementById('root'));
+```
+<hr>
+
+#### The `getSnapshotBeforeUpdate`
+<p align="justify">The getSnapshotBeforeUpdate() method is called just before the component's UI is updated. It allows the component to capture some information about the current state of the UI, such as the scroll position before it changes. This method returns a value that is passed as the third parameter to the componentDidUpdate() method.</p>
+
+<p align="justify">Here's an example of how to use getSnapshotBeforeUpdate() to capture the scroll position of a component before it updates:</p>
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritefood: "rice"};
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({favoritefood: "pizza"})
+    }, 1000)
+  }
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    document.getElementById("div1").innerHTML =
+    "Before the update, the favorite was " + prevState.favoritefood;
+  }
+  componentDidUpdate() {
+    document.getElementById("div2").innerHTML =
+    "The updated favorite food is " + this.state.favoritefood;
+  }
+  render() {
+    return (
+      <div>
+        <h1>My Favorite Food is {this.state.favoritefood}</h1>
+        <div id="div1"></div>
+        <div id="div2"></div>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Header />, document.getElementById('root'));
+```
+<p align="justify">This is a React component called Header that renders a heading and a button that, when clicked, shows the user's favorite food. The component also has a state that keeps track of the favorite food and whether or not to show it.</p>
+
+<p align="justify">The constructor method sets the component's initial state, including the default favorite food of "rice" and the showFavFood state variable to false.</p>
+
+<p align="justify"> The <code>componentDidMount</code> method is called after the component has been mounted to the DOM. In this case, it sets a timeout that will change the favorite food to "pizza" after one second. </p>
+
+<p align="justify">The <code>getSnapshotBeforeUpdate</code> method is called right before the component is updated. It checks if the favoriteFood state variable has changed since the last update and returns an object with the previous favorite food if it has. Otherwise, it returns null. </p>
+
+<p align="justify"> The <code>componentDidUpdate</code> method is called after the component has been updated. It receives the previous props, state, and snapshot as arguments. In this case, it checks if the snapshot is not null and logs the previous favorite food to the console. </p>
+
+<p align="justify"> In the render method, the component renders a heading that displays the current favorite food state variable. When the button is clicked, the showFavFood state variable is set to true and a paragraph is rendered that displays the current favorite food state variable. </p>
+
+<p align="justify"> Finally, the ReactDOM.render function is called to render the Header component inside an HTML element with the id of "root".</p>
 
 ### Answer to Question 9
 <p align="justify">The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders. The changes in state can happen as a response to user action or system-generated events and these changes determine the behavior of the component and how it will render.</p>
