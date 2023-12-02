@@ -52,34 +52,16 @@ console.log(myDog.breed);
 <p align="justify">In React, a class-based component is a type of component that is defined ES6 class syntax </p>
 
 ### Answer to Question 4
-<table style="background-color:pink">
-  <thead>
-    <tr>
-      <th colspan="2" ><font color="blue">Differences between Functional Components and Class Components</font> </th>
-    </tr>
+| Differences between Functional Components and Class Components | |
+|:---: | :---: |
+| Functional Component | Centered Header 2 |
+| ----:| :-- |
+| Row 1, Cell 1 | Row 1, Cell 2 |
+| Row 2, Cell 1 | Row 2, Cell 2 |
+| Row 3, Cell 1 | Row 3, Cell 2 |
+| Footer 1 | Footer 2 |
 
-  </thead>
-  <tbody>
-    <tr>
-      <td>Row 1, Cell 1</td>
-      <td>Row 1, Cell 2</td>
-    </tr>
-    <tr>
-      <td>Row 2, Cell 1</td>
-      <td>Row 2, Cell 2</td>
-    </tr>
-    <tr>
-      <td>Row 3, Cell 1</td>
-      <td>Row 3, Cell 2</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Footer 1</td>
-      <td>Footer 2</td>
-    </tr>
-  </tfoot>
-</table>
+
 
 ### Answer to Question 5
 1. State with Complex Logic
