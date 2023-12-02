@@ -52,10 +52,6 @@ console.log(myDog.breed);
 <p align="justify">In React, a class-based component is a type of component that is defined ES6 class syntax </p>
 
 ### Answer to Question 4
-| Differences between Functional Components and Class Components | |
-|:-------------------------------------------------------------:|---|
-
-
 
 
 ### Answer to Question 5
