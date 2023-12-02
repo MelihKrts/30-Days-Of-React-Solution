@@ -52,24 +52,24 @@ console.log(myDog.breed);
 <p align="justify">In React, a class-based component is a type of component that is defined ES6 class syntax </p>
 
 ### Answer to Question 4
-<table style="background-color:pink">
+<table>
   <thead>
     <tr>
       <th colspan="2" style="text-align:center">Differences between Functional Components and Class Components </th>
     </tr>
     </thead>
   <tbody>
-    <tr style="text-align:center">
+    <tr align="center">
       <td>Functional Component</td>
       <td>Class Component</td>
     </tr>
-    <tr>
-      <td>Row 2, Cell 1</td>
-      <td>Row 2, Cell 2</td>
+    <tr align="justify">
+      <td> A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).</td>
+      <td>A class component requires you to extend from React. Component and create a render function that returns a React element.</td>
     </tr>
     <tr>
-      <td>Row 3, Cell 1</td>
-      <td>Row 3, Cell 2</td>
+      <td>There is no render method used in functional components.	</td>
+      <td>It must have the render() method returning JSX (which is syntactically similar to HTML)</td>
     </tr>
   </tbody>
 </table>
