@@ -132,9 +132,162 @@ console.log(myDog.breed);
 3. Unmounting
 </p>
 
+#### Mounting
+<hr>
+
+<p align="justify">The mounting phase refers to the period when a component is being created and inserted into the DOM </p>
+
+<p align="justify">During the phase, several lifecycle methods are invoked by React to enable the developer to configure the component, set up any necessary state or event listeners, and perfom other initialization tasks.</p> 
+
+<p align="justify">The mounting phase has three main lifecycle methods
+</p>
+<hr>
+
+#### The `constructor`
+<hr>
+<p align="justify">The <code>constructor()</code> method is called when the component is first created. You use it to initialize the component's state and bind methods to the component's instance.</p>
+
+<p align="justify">The constructor() method is called with the props, as arguments, and you should always start by calling the super(props) before anything else, this will initiate the parent's constructor method and allows the component to inherit methods from its parent (React.Component).
+</p>
+
+```jsx
+import React, { Component } from 'react';
+
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      count: prevState.count + 1
+    }));
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.handleClick}>Increment</button>
+      </div>
+    );
+  }
+}
+
+export default Counter;
+```
+<hr>
+
+#### The `render`
+<p align="justify">The <code> render()</code> method is required, and is the method that actually outputs the HTML to the DOM. </p>
+<hr>
+
+#### The `getDerivedStateFromProps`
+<p align="justify"><code>The getDerivedStateFromProps()</code> method is called right before rendering the element(s) in the DOM.
+
+This is the natural place to set the <code>state</code> object based on the initial <code>props</code>.
+
+It takes <code>state</code> as an argument, and returns an object with changes to the <code>state</code>.
+
+The example below starts with the favorite color being "red", but the <code>getDerivedStateFromProps()</code> method updates the favorite color based on the favcol attribute:</p>
+
+<br>
+
+`props`: The updated props for the component.
+
+`state`: The current state of the component.
+
+```jsx
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritecolor: "red"};
+  }
+  static getDerivedStateFromProps(props, state) {
+    return {favoritecolor: props.favcol };
+  }
+  render() {
+    return (
+      <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+    );
+  }
+}
+
+ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
+```
+
+<hr>
+<br>
+
+#### The `componentDidMount`
+<hr>
+
+<p align="justify">
+The componentDidMount() method is called once the component has been mounted into the DOM. It is typically used to set up any necessary event listeners or timers, perform any necessary API calls or data fetching, and perform other initialization tasks that require access to the browser's DOM API.
+</p>
+
+```jsx
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritecolor: "red"};
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({favoritecolor: "yellow"})
+    }, 1000)
+  }
+  render() {
+    return (
+      <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+    );
+  }
+}
+
+ReactDOM.render(<Header />, document.getElementById('root'));
+```
+<br>
+<hr>
+
+### Updating
+<p align="justify">
+The next phase in the lifecycle is when a component is updated.</p>
+
+<p align="justify">A component is updated whenever there is a change in the component's state or props.
+<p>
+<hr>
+
 ### Answer to Question 9
 <p align="justify">The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders. The changes in state can happen as a response to user action or system-generated events and these changes determine the behavior of the component and how it will render.</p>
+
+```jsx
+class Greetings extends React.Component {
+  state = {
+    name: "World"
+  };
+
+  updateName() {
+    this.setState({ name: "Simplilearn" });
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.name}
+      </div>
+    );
+  }
+}
+```
+
+<br>
 
 # References
 - [Simplilearn](https://www.simplilearn.com/tutorials/reactjs-tutorial/reactjs-state)
 - [W3Schools](https://www.w3schools.com/react/react_lifecycle.asp)
+- [Geeks of Geeks](https://www.geeksforgeeks.org/differences-between-functional-components-and-class-components/)
+- [FreeCodeCamp](https://www.freecodecamp.org/news/react-component-lifecycle-methods)
