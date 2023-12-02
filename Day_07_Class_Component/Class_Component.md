@@ -59,9 +59,9 @@ console.log(myDog.breed);
     </tr>
     </thead>
   <tbody>
-    <tr>
-      <td style="text-align:center">Functional Component</td>
-      <td style="text-align:center">Class Component</td>
+    <tr style="text-align:center">
+      <td>Functional Component</td>
+      <td>Class Component</td>
     </tr>
     <tr>
       <td>Row 2, Cell 1</td>
