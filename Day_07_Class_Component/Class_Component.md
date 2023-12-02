@@ -590,6 +590,8 @@ class Greetings extends React.Component {
 6. `setState()` function performs a shallow merge between the new and the previous state
 </p>
 
+<br>
+
 #### The `setState()` Method
 <p align="justify">State can be updated in response to event handlers, server responses, or prop changes. This is done using the <code>setState()</code> method. The <code>setState()</code> method enqueues all of the updates made to the component state and instructs React to re-render the component and its children with the updated state.</p>
 
