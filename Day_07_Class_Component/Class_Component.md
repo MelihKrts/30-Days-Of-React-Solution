@@ -405,9 +405,9 @@ ReactDOM.render(<Header />, document.getElementById('root'));
 <hr>
 
 #### The `getSnapshotBeforeUpdate`
-<p align="justify">The getSnapshotBeforeUpdate() method is called just before the component's UI is updated. It allows the component to capture some information about the current state of the UI, such as the scroll position before it changes. This method returns a value that is passed as the third parameter to the componentDidUpdate() method.</p>
+<p align="justify">The <code>getSnapshotBeforeUpdate()</code> method is called just before the component's UI is updated. It allows the component to capture some information about the current state of the UI, such as the scroll position before it changes. This method returns a value that is passed as the third parameter to the <code>componentDidUpdate()</code> method.</p>
 
-<p align="justify">Here's an example of how to use getSnapshotBeforeUpdate() to capture the scroll position of a component before it updates:</p>
+<p align="justify">Here's an example of how to use <code>getSnapshotBeforeUpdate()</code> to capture the scroll position of a component before it updates:</p>
 
 ```jsx
 import React from 'react';
@@ -444,19 +444,19 @@ class Header extends React.Component {
 
 ReactDOM.render(<Header />, document.getElementById('root'));
 ```
-<p align="justify">This is a React component called Header that renders a heading and a button that, when clicked, shows the user's favorite food. The component also has a state that keeps track of the favorite food and whether or not to show it.</p>
+<p align="justify">This is a React component called <code>Header</code> that renders a heading and a button that, when clicked, shows the user's favorite food. The component also has a state that keeps track of the favorite food and whether or not to show it.</p>
 
-<p align="justify">The constructor method sets the component's initial state, including the default favorite food of "rice" and the showFavFood state variable to false.</p>
+<p align="justify">The <code>constructor</code> method sets the component's initial state, including the default favorite food of "rice" and the <code>showFavFood</code> state variable to false.</p>
 
 <p align="justify"> The <code>componentDidMount</code> method is called after the component has been mounted to the DOM. In this case, it sets a timeout that will change the favorite food to "pizza" after one second. </p>
 
-<p align="justify">The <code>getSnapshotBeforeUpdate</code> method is called right before the component is updated. It checks if the favoriteFood state variable has changed since the last update and returns an object with the previous favorite food if it has. Otherwise, it returns null. </p>
+<p align="justify">The <code>getSnapshotBeforeUpdate</code> method is called right before the component is updated. It checks if the <code>favoriteFood</code> state variable has changed since the last update and returns an object with the previous favorite food if it has. Otherwise, it returns <code>null</code>. </p>
 
 <p align="justify"> The <code>componentDidUpdate</code> method is called after the component has been updated. It receives the previous props, state, and snapshot as arguments. In this case, it checks if the snapshot is not null and logs the previous favorite food to the console. </p>
 
-<p align="justify"> In the render method, the component renders a heading that displays the current favorite food state variable. When the button is clicked, the showFavFood state variable is set to true and a paragraph is rendered that displays the current favorite food state variable. </p>
+<p align="justify"> In the <code>render</code> method, the component renders a heading that displays the current favorite food state variable. When the button is clicked, the showFavFood state variable is set to <code>true</code> and a paragraph is rendered that displays the current favorite food state variable. </p>
 
-<p align="justify"> Finally, the ReactDOM.render function is called to render the Header component inside an HTML element with the id of "root".</p>
+<p align="justify"> Finally, the <code>ReactDOM.render</code> function is called to render the Header component inside an HTML element with the id of "root".</p>
 
 ### Answer to Question 9
 <p align="justify">The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders. The changes in state can happen as a response to user action or system-generated events and these changes determine the behavior of the component and how it will render.</p>
