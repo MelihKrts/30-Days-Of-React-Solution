@@ -508,7 +508,6 @@ ReactDOM.render(<Header />, document.getElementById('root'));
 1. `componentWillUnmount()`
 </p>
 
-<br>
 
 #### The `componentWillUnmount()`
 <p align="justify">The <code>componentWillUnmount</code> method is called when the component is about to be removed from the DOM.</p>
