@@ -150,7 +150,6 @@ console.log(myDog.breed);
 <hr>
 
 #### The `constructor`
-<hr>
 <p align="justify">The <code>constructor()</code> method is called when the component is first created. You use it to initialize the component's state and bind methods to the component's instance.</p>
 
 <p align="justify">The constructor() method is called with the props, as arguments, and you should always start by calling the super(props) before anything else, this will initiate the parent's constructor method and allows the component to inherit methods from its parent (React.Component).
@@ -206,6 +205,8 @@ The example below starts with the favorite color being "red", but the <code>getD
 
 `state`: The current state of the component.
 
+<br>
+
 ```jsx
 class Header extends React.Component {
   constructor(props) {
@@ -228,7 +229,6 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <hr>
 
 #### The `componentDidMount`
-<hr>
 
 <p align="justify">
 The <code>componentDidMount()</code> method is called once the component has been mounted into the DOM. It is typically used to set up any necessary event listeners or timers, perform any necessary API calls or data fetching, and perform other initialization tasks that require access to the browser's DOM API.
