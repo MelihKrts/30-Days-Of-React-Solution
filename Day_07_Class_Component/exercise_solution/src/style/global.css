@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+img {
+    width: 100%;
+    height: auto;
+}
 
 section {
     width: 100%;
@@ -71,4 +75,79 @@ h1 {
     padding: 0.5rem 1rem;
     margin: 1rem 0.5rem;
     cursor: pointer;
+}
+.skill-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+}
+.skillbox{
+    background-color: #2ACFCF;
+    text-align: center;
+    border-radius: 0.375rem;
+    margin: 10px 10px;
+    padding: 10px;
+    color: #fff;
+}
+.left-div{
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+.left-div h1 {
+    margin: 15px 45px;
+}
+
+.infobox-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px 45px;
+}
+.infobox{
+    width: 33.3%;
+}
+
+.infobox-img img {
+    border-radius: 50%;
+    width: 50%;
+}
+.user-info{
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.name-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.namebox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    background-color: #2ACFCF;
+    border-radius: 50%;
+    margin: 0px 10px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.namebox h1 {
+    text-transform: uppercase;
+}
+.name-wrapper h2 {
+    font-weight: 400;
+}
+.left-div h1 {
+    text-transform: uppercase;
 }

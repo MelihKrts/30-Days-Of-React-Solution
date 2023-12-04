@@ -1,6 +1,8 @@
 import React from 'react'
-import { css, html, js, reactLogo } from '~/image';
-import { createRoot } from 'react-dom/client'
+import { css, html, js, reactLogo, asabeneh } from '~/image';
+import { createRoot } from 'react-dom/client';
+import { TiTick } from "react-icons/ti";
+
 import "~/style/global.css"
 
 const imageObj = [html, css, js, reactLogo];
@@ -47,7 +49,7 @@ class ColorGeneratorComponent extends React.Component {
       <>
         <div>
           {colors.map((color, index) => (
-            <div key={index} style={{ backgroundColor: color, color:"#fff", textAlign:"center", padding: 10, margin: "30px auto", width:"50%" }}>
+            <div key={index} style={{ backgroundColor: color, color: "#fff", textAlign: "center", padding: 10, margin: "30px auto", width: "50%" }}>
               {color}
             </div>
           ))}
@@ -67,6 +69,84 @@ const Input = ({ type, className, placeholder }) => {
   return (
     <input type={type} className={className} placeholder={placeholder}></input>
   )
+}
+
+const skill = ["HTML", "CSS", "Sass", "JS", "React", "Redux", "Node", "MongoDB", "Python", "Flask", "Django", "NumPY", "Pandas", "Data Analysis", "MYSQL", "GraphSql", "D3.js", "Gatsby", "Docker", "Heroku", "Git"]
+
+
+const Skills = ({ skill }) => {
+  const skillList = skill.map((skill) => <div key={skill} className='skillbox'>{skill}</div>)
+  return skillList;
+}
+
+class PersonInfo extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    const {
+      firstName,
+      lastName,
+      image,
+      title,
+      country
+    } = this.props.data;
+    const fullName = `${firstName} ${lastName}`;
+    return (
+      <div className='infobox-wrapper'>
+
+        <div className='infobox'>
+
+        <div className='infobox-img'>
+        <img src={image} alt={fullName} title={fullName}></img>
+        </div>
+
+        <div className="name-wrapper">
+          <div className='namebox'>
+          <h1>{firstName} {lastName}</h1>
+          <div className='icon'><TiTick/></div>
+          </div>
+          <h2>{title} {country}</h2>
+        </div>
+          
+        </div>
+
+      </div>
+    )
+  }
+}
+
+class Usercard extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    const data = {
+      firstName: "Asabeneh",
+      lastName: "Yetayeh",
+      title: "Senior Developer",
+      country: "Finland",
+      image: asabeneh
+    }
+
+    return (
+      <Section className="user-info">
+        <PersonInfo data={data} />
+        <div className='left-div'>
+          <h1>Skills</h1>
+        </div>
+
+        <Container className="container">
+
+          <Container className="skill-container">
+            <Skills skill={skill} />
+          </Container>
+
+        </Container>
+      </Section>
+
+    )
+  }
 }
 
 class InputField extends React.Component {
@@ -134,7 +214,8 @@ class App extends React.Component {
       <>
         <FrontEnd />
         <InputField />
-        <ColorGeneratorComponent/>
+        <ColorGeneratorComponent />
+        <Usercard />
       </>
 
     )
