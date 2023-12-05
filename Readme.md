@@ -21,3 +21,4 @@
 |05|[Props](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_05_Props)|
 |06|[Map, List, Keys](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_06_Map_Key_List)|
 |07|[Class Component](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_07_Class_Component)|
+|08|[States](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_08_States)|
