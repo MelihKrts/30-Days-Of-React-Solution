@@ -1,0 +1,129 @@
+
+$max-width: 1140px;
+$display: flex;
+$justify: center;
+$border: none;
+$outline: none;
+$text: center;
+
+@mixin space() {
+    padding: 5px 0;
+}
+.light-theme{
+    background-color: #fff !important;
+    color: #000;
+}
+
+.dark-theme{
+    background-color: #0F172A !important;
+    color: #fff;
+}
+
+.secton{
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.img-box {
+    width: 20%;
+    margin: 10px 0;
+}
+
+.btn-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.btn {
+    background-color: #60DBFC;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.img-box img {
+    border-radius: 50%;
+}
+
+* {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: $border;
+    font-weight: 300;
+}
+
+section {
+    width: 100%;
+}
+
+.container {
+    display: $display;
+    justify-content: $justify;
+    flex-direction: column;
+    margin: auto;
+    max-width: $max-width;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+}
+
+.container {
+
+    h1,
+    h2,
+    h3,
+    p,
+    small {
+        @include space()
+    }
+}
+
+.info-section {
+    background-color: #60DBFC;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.footer-section{
+    background-color: #66CBFF;
+}
+
+.light-theme .main-section {
+    background-color: #fff; /* Light theme color for main section */
+  }
+  
+  .dark-theme .main-section {
+    background-color: #333; /* Dark theme color for main section */
+  }
+  
+  .footer-section {
+    background-color: #66CBFF;
+  }
+  
+  .info-section {
+    background-color: #60DBFC;
+  }
+
+  .main-section {
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  .main-section.dark-theme {
+    background-color: #0F172A; /* Replace with your desired dark theme color */
+    color: #F5F5F5; /* Contrast color for text and elements */
+  }
