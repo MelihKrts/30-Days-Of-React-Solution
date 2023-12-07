@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import { createRoot } from "react-dom/client"
 import asabeneh from "~/image/asabeneh.jpg";
 import "./app.scss";
+import { countriesData } from './data/countries';
 
 const Section = ({ className, children }) => {
   return (
@@ -120,6 +121,62 @@ const Container = ({ className, children }) => {
   )
 }
 
+class Country extends React.Component {
+  formatPopulation = (population) => {
+    return new Intl.NumberFormat().format(population);
+  };
+  render() {
+    const { name, capital, languages, population, flag, currency } = this.props.country;
+    return (
+      <Section>
+        <Container className="container">
+          <div className='card-wrapper'>
+
+            <div className='country-card'>
+
+              <div className="country-img">
+
+                <img src={flag} alt={`${name} flag`} />
+              </div>
+
+              <div className="country-name">
+                <h2>{name}</h2>
+              </div>
+
+              <div className="country-info-wrapper">
+
+                <div className='country'>
+                  <h3>Capital: </h3>
+                  <p>{capital}</p>
+                </div>
+
+                <div className='country'>
+                  <h3>Language: </h3>
+                  <p>{languages.join(", ")}</p>
+                </div>
+
+                <div className='country'>
+                  <h3>Population: </h3>
+                  <p>{this.formatPopulation(population)}</p> {/* Apply inline style and format population */}
+                </div>
+
+                <div className='country'>
+                  <h3>Currency: </h3>
+                  <p>{currency}</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <button className='btn' onClick={this.props.onChangeCountry}>Select Country</button>
+
+          </div>
+        </Container>
+      </Section>
+    )
+  }
+}
 
 
 class Content extends React.Component {
@@ -159,9 +216,16 @@ class App extends React.Component {
     super(props);
     this.state = {
       theme: 'light-theme',
+      currentCountryIndex: 0,
     };
 
   }
+
+  changeCountry = () => {
+    const { currentCountryIndex } = this.state;
+    const randomIndex = Math.floor(Math.random() * countriesData.length);
+    this.setState({ currentCountryIndex: randomIndex });
+  };
 
   showTime = (time) => {
     const months = [
@@ -202,6 +266,8 @@ class App extends React.Component {
 
   render() {
     const { theme } = this.state;
+    const { currentCountryIndex } = this.state;
+
     const data = {
       welcome: "Welcome to 30 Days Of React",
       title: "Getting Started React",
@@ -217,8 +283,9 @@ class App extends React.Component {
     const user = { ...data.author, image: asabeneh }
     return (
       <>
-      <Content data={data} />
-        <Main techs={techs}  user={user} greetPeople={this.greetPeople} showingTime={this.showingTime} changeBg={this.changeBg} theme={theme} />
+        <Content data={data} />
+        <Main techs={techs} user={user} greetPeople={this.greetPeople} showingTime={this.showingTime} changeBg={this.changeBg} theme={theme} />
+        <Country country={countriesData[currentCountryIndex]} onChangeCountry={this.changeCountry}  />
         <Footer date={new Date()} />
       </>
     )
