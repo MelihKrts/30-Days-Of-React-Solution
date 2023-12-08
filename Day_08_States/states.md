@@ -102,3 +102,6 @@ function MyComponent() {
 
 export default MyComponent;
 ```
+# References
+- [W3Schools](https://www.w3schools.com/react/react_state.asp)
+- [Geek Of Geeks](https://www.geeksforgeeks.org/what-are-the-differences-between-props-and-state/)
