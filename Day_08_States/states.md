@@ -28,22 +28,22 @@
 <td>The Data is passed from one component to another.</td>
 <td>The Data is passed within the component only.
 </td>
-<tr>
+</tr>
 
 <tr>
 <td>It is Immutable (cannot be modified).</td>
 <td>It is Mutable (can be modified).</td>
-<tr>
+</tr>
 
 <tr>
 <td>Props can be used with state and functional components.	</td>
 <td>The state can be used only with the state components/class component (Before 16.0).</td>
-<tr>
+</tr>
 
 <tr>
 <td>Props are read-only. </td>
 <td>The state is both read and write.</td>
-<tr>
+</tr>
 
 </tbody>
 
