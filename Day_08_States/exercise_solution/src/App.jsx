@@ -285,7 +285,7 @@ class App extends React.Component {
       <>
         <Content data={data} />
         <Main techs={techs} user={user} greetPeople={this.greetPeople} showingTime={this.showingTime} changeBg={this.changeBg} theme={theme} />
-        <Country country={countriesData[currentCountryIndex]} onChangeCountry={this.changeCountry}  />
+        <Country country={countriesData[currentCountryIndex]} onChangeCountry={this.changeCountry} />
         <Footer date={new Date()} />
       </>
     )
