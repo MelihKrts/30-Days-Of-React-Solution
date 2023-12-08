@@ -23,6 +23,82 @@
 <td>Props</td>
 <td> State</td>
 </tr>
+
+<tr>
+<td>The Data is passed from one component to another.</td>
+<td>The Data is passed within the component only.
+</td>
+<tr>
+
+<tr>
+<td>It is Immutable (cannot be modified).</td>
+<td>It is Mutable (can be modified).</td>
+<tr>
+
+<tr>
+<td>Props can be used with state and functional components.	</td>
+<td>The state can be used only with the state components/class component (Before 16.0).</td>
+<tr>
+
+<tr>
+<td>Props are read-only. </td>
+<td>The state is both read and write.</td>
+<tr>
+
 </tbody>
 
 </table>
+
+### Answer to Question 4
+```jsx
+import React from 'react'
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 0,
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <p> Counter : {this.state.counter} </p>
+      </div>
+    );
+  }
+}
+```
+
+### Answer to Question 5
+```jsx
+import React, { useState } from 'react';
+
+function MyComponent() {
+  const [mySet, setMySet] = useState(new Set());
+
+  const addItemToSet = (item) => {
+    setMySet((prevSet) => new Set([...prevSet, item]));
+  };
+
+  const removeItemFromSet = (item) => {
+    setMySet((prevSet) => {
+      const newSet = new Set(prevSet);
+      newSet.delete(item);
+      return newSet;
+    });
+  };
+
+  return (
+    <div>
+      <p>Set items: {Array.from(mySet).join(', ')}</p>
+      <button onClick={() => addItemToSet('Item 1')}>Add Item 1</button>
+      <button onClick={() => addItemToSet('Item 2')}>Add Item 2</button>
+      <button onClick={() => removeItemFromSet('Item 1')}>Remove Item 1</button>
+    </div>
+  );
+}
+
+export default MyComponent;
+```
