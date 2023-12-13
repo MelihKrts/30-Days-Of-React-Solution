@@ -1,0 +1,100 @@
+.country-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.country-box {
+    width: 33.3%;
+}
+
+.population-bar {
+    height: 20px;
+    background-color: #FFA500;
+    margin-bottom: 5px;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.country-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.countrys-wrapper{
+    max-width: 50rem;
+    min-width: 50rem;
+    height: 35rem;
+    text-align: center;
+    margin: 0.75rem auto;
+    padding: 2rem;
+    border-radius: 0.2rem;
+    background: white;
+    box-shadow: 0 0.1rem 1rem #cfc9c7;
+}
+
+.countrys-wrapper:hover {
+    box-shadow: 0 0.1rem 1rem #cfc9c7;
+    --webkit-transition: all 0.2s ease-in;
+    transform: scale(1.015);
+}
+
+.country_text{
+    width: 100%;
+}
+
+.country_flag {
+    height: 12rem;
+    width: 20rem;
+    text-align: center;
+    margin: auto;
+}
+
+.countrys-wrapper img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
+}
+
+.country_name {
+    font-size: 1.6rem;
+    color: #ffa500;
+    letter-spacing: 0.075rem;
+    font-weight: bolder;
+    margin: 1rem;
+    color: #414141;
+    font-weight: 900;
+}
+
+.countrys-wrapper p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0.2rem;
+    color: #747474;
+
+    text-align: left;
+    letter-spacing: 0.05rem;
+}
+
+.countrys-wrapper span {
+    font-weight: 600;
+}

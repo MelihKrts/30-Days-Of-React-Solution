@@ -1,0 +1,26 @@
+.front-end{
+    width: 100%;
+    background-color: #F0F1F7;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1140px;
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.fe-tech{
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+}

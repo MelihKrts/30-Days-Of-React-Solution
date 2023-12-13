@@ -1,0 +1,52 @@
+header {
+  background-color: #61dbfb;
+  padding: 10px;
+}
+
+.header-wrapper,
+.main-wrapper,
+.footer-wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+.header-wrapper,
+.main-wrapper {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 300;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+}
+
+main {
+  padding-bottom: 60px;
+}
+
+ul {
+  margin-left: 15px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.user-card {
+  margin-top: 10px;
+}
+
+.user-card>img {
+  border-radius: 50%;
+  width: 14%;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}

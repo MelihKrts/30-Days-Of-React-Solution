@@ -1,0 +1,38 @@
+.field-text {
+    width: 250px;
+    margin: 15px 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0.35rem;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.input-field {
+    background-color: #C2E6F4;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.submit {
+    color: #fff;
+    text-align: center;
+    background-color: #F37474;
+    border: none;
+    outline: none;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
