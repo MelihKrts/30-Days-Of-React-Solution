@@ -30,7 +30,7 @@
 <br>
 
 **React.js**
-<hr>
+
 
 ```jsx
 <button onClick={clickHandler}>
