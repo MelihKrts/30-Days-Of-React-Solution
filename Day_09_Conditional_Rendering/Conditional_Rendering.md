@@ -73,7 +73,7 @@ function MyComponent({ condition }) {
 }
 ```
 
-### Ansrwer to Question 3
+### Answer to Question 3
 
 <p align="justify">The answer to this question can actually vary according to usage. Use <code>switch</code> if there will be multiple condition control. If there is no multiple control, I prefer to use a  <code>ternary</code> operator.</p>
 
