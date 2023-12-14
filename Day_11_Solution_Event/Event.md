@@ -1,12 +1,12 @@
 # Day 11 Event Exercise Level 1 Solution
 ## Answer to Exercise Level 1 Solution
 ### Answer to Question 1
-<hr>
+
 
 <p align="justify">An event is an action or occurence recognized by a software</p>
 
 ### Answer to Question 2
-<hr>
+
 <p align="justify">
 
 - React uses `camelCase` for event names while HTML uses lowercase.
@@ -20,7 +20,7 @@
 <br>
 
 **HTML**
-<hr>
+
 
 ```html
 <button onclick="clickHandler()">
@@ -43,7 +43,7 @@
 <br>
 
 ### Answer to Question 3
-<hr>
+
 
 1) **onKeyDown**
 
@@ -93,7 +93,7 @@
 <br>
 
 ### Answer to Question 4
-<hr>
+
 
 1) **onClick**
 
@@ -198,7 +198,7 @@
 <br>
 
 ### Answer to Question 5
-<hr>
+
 <p align="justify">
 
 **Mouse Event**
@@ -237,7 +237,7 @@
 <br>
 
 ### Answer to Question 6 
-<hr>
+
 
 ```jsx
 import { Component } from 'react'
@@ -268,7 +268,7 @@ class App extends Component {
 ```
 
 ### Answer to Question 7
-<hr>
+
 
 ```jsx
 import React, { Component } from 'react';
@@ -333,7 +333,7 @@ export default MyFormComponent;
 ```
 
 ### Answer to Question 8
-<hr>
+
 
 ```jsx
 class MouseCoordinateTracker extends Component {
@@ -367,7 +367,7 @@ class MouseCoordinateTracker extends Component {
 ```
 
 ### Answer to Question 9
-<hr>
+
 <p align="justify">
 
 `onInput`:
@@ -396,7 +396,7 @@ class MouseCoordinateTracker extends Component {
 </p>
 
 ### Answer to Question 10
-<hr>
+
 <p align="justify"> In React, you typically place the <code>onSubmit</code> event handler on the <code>form</code> element. This is where the event is triggered when the form is submitted.
 </p>
 
