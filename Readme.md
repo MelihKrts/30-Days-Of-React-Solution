@@ -25,3 +25,4 @@
 |09|[Conditional Rendering](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_09_Conditional_Rendering)|
 |10|[React Project Folder Structure](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_10_React_Project_Folder_Structer)|
 |11|[Events](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_11_Solution_Event)|
+|12|[Forms](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_12_Forms)|
