@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.errorInput {
+  border-color: rgba(220, 42, 29, 0.8) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(220, 42, 29, 0.6) !important;
+  outline: 0 none;
+  border: 1px solid #ccc !important;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  auto;
+  flex-direction: column;
+}
+
+.btn {
+  margin: 10px 0;
+  display: block;
+}
+
+.form-data{
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  border-radius: 4px;
+  color: #555;
+  padding: 10px 15px;
+  margin: 10px ;
+}
+
+.error-message {
+  color: red; 
+}
