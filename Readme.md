@@ -27,3 +27,4 @@
 |11|[Events](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_11_Solution_Event)|
 |12|[Forms](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_12_Forms)|
 |13|[Uncontrolled Component](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_13_Uncontrolled_Component)|
+|14|[Component Life Cycles](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_14_Component_Life_Cycles)|
