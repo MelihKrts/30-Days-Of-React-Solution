@@ -1,0 +1,34 @@
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #ecf0f1;
+    position: fixed;
+    z-index: 1;
+}
+
+.link-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.link-wrapper > ul  {
+    display: flex;
+    list-style: none;
+}
+
+.link-wrapper > ul > li {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.active {
+    color: #fff;
+    background-color: #2980b9;
+    border-radius: 5px;
+    padding: 10px;
+  }

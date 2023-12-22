@@ -1,0 +1,66 @@
+.user-card{
+    width: 25%;
+    margin:20px 25px;
+    box-shadow: 0 0.1rem 1rem #cfc9c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+}
+
+section {
+    padding-top: 60px;
+    position: relative;
+}
+
+.portfolio-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-img{
+    margin: 15px 0;
+}
+
+.data-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.title-area > h2 {
+    font-size: 1.3rem;
+}
+
+.info{
+    font-weight: 600;
+}
+.info> span{
+    display: block;
+    margin-left: 15px;
+    font-size: 1.3rem;
+}
+.traits{
+    margin-left: 0 !important;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
