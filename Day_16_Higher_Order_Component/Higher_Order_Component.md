@@ -1,5 +1,5 @@
 # Day 16 Higher Order Component Exercise Level 1 Solution
-## Answer to Question
+## Answers to Exercise Level 1 Questions
 ### Answer to Question 1
 <p align="justify">A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
 

@@ -1,5 +1,5 @@
 # Day 12 Forms Exercise Level 1 Solution
-## Answer to Exercise Level 1 Question
+## Answers to Exercise Level 1 Questions
 ### Answer to Ouestion 1
 <p align="justify">We use the form to collect data from user, to enter our information. We use forms in business, social media, when logging in to websites, or becoming a member of a website. If we are a developer, we can use forms to retreive data and store it in a database. </p>
 

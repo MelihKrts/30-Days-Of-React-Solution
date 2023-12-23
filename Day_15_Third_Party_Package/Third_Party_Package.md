@@ -1,5 +1,5 @@
 # Day 15 Third Party Package Exercise Level 1 Solution
-## Answer to Question
+## Answers to Exercise Level 1 Questions
 ### Answer to Question 1
 <p align="justify">With sotfware, a package is a module that can be added to any program to add additional options, features, or functionality.</p>
 

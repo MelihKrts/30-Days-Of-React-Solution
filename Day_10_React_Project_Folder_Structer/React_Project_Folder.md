@@ -1,5 +1,5 @@
 # Day 10 React Project Folder Exercise Level 1 Solution
-## Answer to Exercise Level 1 Solution
+## Answers to Exercise Level 1 Questions
 ### Answer to Question 1
 <p align="justify">The folder structure and file naming conventions in a React project are essential for maintaining a scalable, organized, and maintainable codebases. A well-defined structure and consistent naming, conventions make it easier for developers to collaborate, understand the code, and navigate through the project.</p>
 

@@ -1,5 +1,5 @@
 # Day 07 Class Component Exercise Level 1 Solution
-## Answer to Exercise Level 1 Solution
+## Answers to Exercise Level 1 Questions
 ### Answer to Question 1
  ```javascript
     function add(a, b) {

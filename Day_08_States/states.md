@@ -1,5 +1,5 @@
 # Day 08 States Exercise Level 1 Solution
-## Answer to Exercise Level 1 Solution
+## Answers to Exercise Level 1 Questions
 ### Answer to Question 1
 <p align="justify">My condition today is good. I am happy to reach day eight, bu I have to go back to the previous days and repeat them. It's bit boring as there are 22 days left in the repo and I have to repeat backwards. &#128515; </p> 
 

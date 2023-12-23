@@ -1,5 +1,5 @@
 # Day 13 Uncontrolled Copmonent Exercise Solution
-## Answer to Exercise Question
+## Answers to Exercise Level 1 Questions
 ### Answer to Question 1
 <p align="justify"><b>Controlled Input: </b> In controlled inputs, there is at all times some sort of changes and amendments going on in the field, every single character entered and even something like a backspace would count as a change. </p>
 

@@ -1,5 +1,5 @@
 # Day 14 Component Life Cycles Exercise Solution
-## Answer to Exercise Question
+## Answers to Exercise Level 1 Questions
 ### Answer to Question 1
 <p align="justify">A component's lifecycle has <b><i>three</i></b> main phases:<br></p>
 
