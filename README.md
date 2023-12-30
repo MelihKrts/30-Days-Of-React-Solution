@@ -36,3 +36,4 @@
 |20|[Day 20](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_19&Day_20)|
 |21|[Introducing React Hooks](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_21_Introducing_React_Hooks)|
 |22|[Form Using React Hooks](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_22_Form_Using_React_Hooks/)|
+|23|[Fetching Data Using Hooks](https://github.com/MelihKrts/30-Days-Of-React-Solution/tree/main/Day_23_Fetching_Data_Using_Hooks)|
