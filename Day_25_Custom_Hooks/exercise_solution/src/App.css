@@ -1,0 +1,140 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.country-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 1rem 0 3rem;
+  max-width: 1140px;
+  margin: 40px auto;
+  background: #f0f0f0;
+}
+
+.country-box{
+  border-radius: 0.2rem;
+  margin: 0.5rem;
+  max-width: 20rem;
+  min-width: 20rem;
+  text-align: center;
+  background: #fff;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.country-flag{
+  height: 12rem;
+  margin: auto;
+  text-align: center;
+  width: 20rem;
+  padding-top: 15px;
+}
+.country-flag img {
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.6rem 0.2rem #f1e1e1;
+  display: block;
+  margin: auto;
+  max-height: 75%;
+  max-width: 75%;
+  min-height: 75%;
+  min-width: 75%;
+}
+.country-name{
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: .075rem;
+  margin-bottom: 1rem
+}
+
+.country-box p {
+  color: #747474;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: .05rem;
+  padding: 0.2rem;
+  text-align: left;
+}
+
+.country-box span {
+  font-weight: 600;
+}
+
+.country-info{
+  margin-left: 15px;
+  margin-bottom: 50px;
+  padding-left: 5px;
+}
+
+.country-info-text{
+  background: #f0f0f0;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.country-info-text h2 {
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.search-bar{
+  background: #faf6f6;
+    border: 0.2rem solid #f8e7e7;
+    border-radius: 3rem;
+    color: orange;
+    font-size: 2rem;
+    height: 5rem;
+    margin: 3rem auto;
+    outline: none;
+    text-indent: 2rem;
+    width: 50%;
+}
