@@ -138,3 +138,18 @@ img {
     text-indent: 2rem;
     width: 50%;
 }
+
+
+@media screen and (max-width:1024px){
+  .search-bar{
+    width: 95%;
+    font-size: 1.5rem;
+  }
+  .country-box{
+    width: 100%;
+    max-width: 25rem;
+  }
+  .country-info-text{
+    font-size: 1.7rem;
+  }
+}
