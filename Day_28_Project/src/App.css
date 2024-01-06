@@ -1,0 +1,109 @@
+#root {
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.form-container{
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.big-text{
+  background-color: #fcf8f3;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  width: 90%;
+  outline: none;
+  color: #555;
+  padding: 20px;
+  border-color: #00b6fd;
+  box-shadow: 0 0 0 0.2rem rgba(0, 90, 125, 0.25)
+}
+.submit {
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #00354a;
+  border-color: #002c3d;
+  margin: 10px;
+  height: 50px;
+}
+.side{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.post{
+  border: 1px solid #e6ecf0;
+  padding: 0 10px;
+  width: 90%;
+  margin: 15px 0;
+  border-radius: 5px;
+  position: relative;
+}
+
+.tweet-container{
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.tweet-paragraph{
+  width: 100%;
+  text-align: justify;
+  margin: 10px 0;
+}
+.tweet-paragraph p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.time-info{
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
