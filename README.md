@@ -21,6 +21,7 @@
   - [PNPM Install](#pnpm-install)
   - [Yarn Install](#yarn-install)
   - [Vite Using](#vite-using)
+- [Info](#info)
 - [Exercise Topics](#exercise-topics)
 
 # 30 Days Of React
@@ -30,6 +31,7 @@
 <p align="justify">Some packages and programs are needed to review the project and code.</p>
 
 <p align="justify">This project was made with <b>Vite. PNPM, Yarn</b> package management system was used. PNPM and yarn must be installed on your computer.</p>
+
 
 ### :information_source: NPM is considered downloaded.
 
@@ -53,6 +55,19 @@ npm install -g yarn
 ## Vite Using
 [Vite](https://vitejs.dev/)
 
+# Info
+<p align="justify">Day 10 of the project was done with CRA yarn. <br> Do not delete files in the application.</p>
+
+**Step One**
+```bash
+yarn add react-scripts
+```
+
+**Step Two**
+
+```bash
+yarn start
+```
 
 # Exercise Topics
 
