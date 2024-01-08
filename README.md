@@ -10,7 +10,51 @@
 
 <br>
 
-# Table of Contens
+# Table Of Contents
+- [30 Days of React Exercise Solution](#30-days-of-react-exercise-solution)
+- [Table Of Contents](#table-of-contents)
+- [30 Days Of React](#30-days-of-react)
+- [:warning: Warning](#warning-warning)
+    - [:information\_source: NPM is considered downloaded.](#information_source-npm-is-considered-downloaded)
+  - [:warning: Warning Node.js](#warning-warning-nodejs)
+  - [Install Node.js](#install-nodejs)
+  - [PNPM Install](#pnpm-install)
+  - [Yarn Install](#yarn-install)
+  - [Vite Using](#vite-using)
+- [Exercise Topics](#exercise-topics)
+
+# 30 Days Of React
+<p align="justify">React 30-day challenge repo for React, the library of the Javascript programming language.</p>
+
+# :warning: Warning
+<p align="justify">Some packages and programs are needed to review the project and code.</p>
+
+<p align="justify">This project was made with <b>Vite. PNPM, Yarn</b> package management system was used. PNPM and yarn must be installed on your computer.</p>
+
+### :information_source: NPM is considered downloaded.
+
+## :warning: Warning Node.js
+You must have *Node.js* installed on your computer or the computer you are doing this exercise on.
+
+## Install Node.js
+[Install Node.js](https://github.com/Asabeneh/30-Days-Of-React/blob/master/readMe.md#install-nodejs)
+
+
+## PNPM Install
+
+```bash
+npm install -g pnpm
+```
+
+## Yarn Install
+```bash
+npm install -g yarn
+```
+## Vite Using
+[Vite](https://vitejs.dev/)
+
+
+# Exercise Topics
 
 | Day Number | Topics
 |--- | ---|
